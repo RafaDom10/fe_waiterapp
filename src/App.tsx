@@ -1,9 +1,5 @@
-import React from 'react'
-
-const App = (): JSX.Element => {
+export function App (): JSX.Element {
   return (
     <h1>App</h1>
   )
 }
-
-export default App
