@@ -1,12 +1,13 @@
+import { orders } from '../../mocks/orders'
 import { OrdersBoard } from '../OrdersBoard'
 import { Container } from './styles'
 
 export function Orders (): JSX.Element {
   return (
     <Container>
-      <OrdersBoard icon='🕦' title='Fila de espera' />
-      <OrdersBoard icon='👨🏻‍🍳' title='Em preparação' />
-      <OrdersBoard icon='✅' title='Pronto' />
+      <OrdersBoard icon='🕦' title='Fila de espera' orders={orders} />
+      <OrdersBoard icon='👨🏻‍🍳' title='Em preparação' orders={[]} />
+      <OrdersBoard icon='✅' title='Pronto' orders={[]} />
     </Container>
   )
 }
