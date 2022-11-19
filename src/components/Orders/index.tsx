@@ -1,59 +1,12 @@
-import { Container, Board, OrdersContainer } from './styles'
+import { OrdersBoard } from '../OrdersBoard'
+import { Container } from './styles'
 
 export function Orders (): JSX.Element {
   return (
     <Container>
-      <Board>
-        <header>
-          <span>🕦</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-        <OrdersContainer>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-        </OrdersContainer>
-      </Board>
-      <Board>
-        <header>
-          <span>🕦</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-        <OrdersContainer>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-        </OrdersContainer>
-      </Board>
-      <Board>
-        <header>
-          <span>🕦</span>
-          <strong>Fila de espera</strong>
-          <span>(1)</span>
-        </header>
-        <OrdersContainer>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 items</span>
-          </button>
-        </OrdersContainer>
-      </Board>
+      <OrdersBoard icon='🕦' title='Fila de espera' />
+      <OrdersBoard icon='👨🏻‍🍳' title='Em preparação' />
+      <OrdersBoard icon='✅' title='Pronto' />
     </Container>
   )
 }
