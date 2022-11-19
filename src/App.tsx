@@ -1,5 +1,11 @@
+import { Header } from './components/Header'
+import { GlobalStyles } from './styles/GlobalStyles'
+
 export function App (): JSX.Element {
   return (
-    <h1>App</h1>
+    <>
+      <GlobalStyles />
+      <Header />
+    </>
   )
 }
