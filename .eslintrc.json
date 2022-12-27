@@ -19,6 +19,7 @@
     ],
     "rules": {
       "react/react-in-jsx-scope": "off",
-      "no-return-assign": "off"
+      "no-return-assign": "off",
+      "@typescript-eslint/no-misused-promises": "off"
     }
 }
